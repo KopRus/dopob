@@ -1,8 +1,5 @@
 # TODO Найдите количество книг, которое можно разместить на дискете
 from msvcrt import kbhit
-
-print("Количество книг, помещающихся на дискету:", 3)
-
 stinbook = 100
 stronst = 50
 symbinstr = 25
@@ -13,3 +10,8 @@ st = stra * stronst
 book = st * stinbook
 kb = book / 1024
 mb = kb / 1024
+books = 1
+while mb <= 1.44:
+    mb+=mb
+    books+=1
+print("Количество книг, помещающихся на дискету:", books)
